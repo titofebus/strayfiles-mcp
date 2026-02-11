@@ -1,0 +1,10 @@
+{
+  "name": "strayfiles-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for managing markdown notes from AI coding agents. Discover, track, edit, and organize .md files without leaving your agent session.",
+  "author": "strayfiles",
+  "homepage": "https://strayfiles.com",
+  "repository": "https://github.com/titofebus/strayfiles-mcp",
+  "skills": "../skills",
+  "mcpServers": "../.mcp.json"
+}

@@ -1,0 +1,7 @@
+{
+  "strayfiles": {
+    "command": "strayfiles",
+    "args": ["mcp"],
+    "env": {}
+  }
+}
