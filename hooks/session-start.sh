@@ -16,6 +16,17 @@ if command -v strayfiles >/dev/null 2>&1; then
   exit 0
 fi
 
+# Check the npm auto-download cache location
+if [ -x "${HOME}/.strayfiles/bin/strayfiles" ]; then
+  cat <<'EOF'
+{
+  "continue": true,
+  "systemMessage": "The strayfiles binary was found at ~/.strayfiles/bin/strayfiles but is not in PATH. The MCP server may fail to start. Suggest the user add it to their PATH:\n\nexport PATH=\"$HOME/.strayfiles/bin:$PATH\"\n\nAdd this line to ~/.bashrc, ~/.zshrc, or the appropriate shell profile."
+}
+EOF
+  exit 0
+fi
+
 # Check the default install location
 if [ -x "${HOME}/.local/bin/strayfiles" ]; then
   cat <<'EOF'

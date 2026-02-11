@@ -1,7 +1,7 @@
 {
   "strayfiles": {
-    "command": "strayfiles",
-    "args": ["mcp"],
+    "command": "sh",
+    "args": ["-c", "if command -v strayfiles >/dev/null 2>&1; then exec strayfiles mcp; elif [ -x \"$HOME/.strayfiles/bin/strayfiles\" ]; then exec \"$HOME/.strayfiles/bin/strayfiles\" mcp; elif [ -x \"$HOME/.local/bin/strayfiles\" ]; then exec \"$HOME/.local/bin/strayfiles\" mcp; else echo 'strayfiles binary not found. Install: curl -fsSL https://strayfiles.com/install.sh | sh' >&2; exit 1; fi"],
     "env": {}
   }
 }

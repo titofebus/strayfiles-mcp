@@ -4,9 +4,9 @@ Common issues and solutions when using Strayfiles MCP tools.
 
 ## "Initialization failed" or tools not responding
 
-**Cause**: The Strayfiles TUI or another instance has an exclusive lock on `~/.strayfiles/data.redb`.
+**Cause**: The Strayfiles TUI, the macOS desktop app, or another MCP instance has an exclusive lock on `~/.strayfiles/data.redb`.
 
-**Fix**: Close the TUI (`Esc` or `q`) before using MCP tools. Only one process can hold the database lock at a time.
+**Fix**: Close the TUI (`Esc` or `q`) or quit the macOS app before using MCP tools. Only one process can hold the database lock at a time.
 
 ## `list_notes` returns empty
 
