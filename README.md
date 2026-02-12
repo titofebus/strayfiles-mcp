@@ -22,9 +22,34 @@ Gives Claude Code 43 tools for managing your markdown files:
 
 ## Install
 
+### Claude Code
+
 ```bash
 claude plugin install https://github.com/titofebus/strayfiles-mcp.git
 ```
+
+Or add the MCP server directly:
+
+```bash
+claude mcp add --transport stdio strayfiles -- npx -y strayfiles-mcp
+```
+
+### Other MCP Clients
+
+Add to your client's MCP config:
+
+```json
+{
+  "mcpServers": {
+    "strayfiles": {
+      "command": "npx",
+      "args": ["-y", "strayfiles-mcp"]
+    }
+  }
+}
+```
+
+Works with Cursor, Windsurf, VS Code, Zed, Codex, and any MCP-compatible client.
 
 ### Prerequisites
 
