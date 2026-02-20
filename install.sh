@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 # Strayfiles MCP plugin — binary installer
 #
-# Ensures the strayfiles binary is available for the MCP server.
+# Ensures the strayfiles CLI/TUI binary is available for the MCP server.
 # Delegates to the canonical install script at strayfiles.com.
 #
 # Usage:

@@ -59,7 +59,23 @@ The Strayfiles binary must be installed. The plugin will tell you if it's missin
 curl -fsSL https://strayfiles.com/install.sh | sh
 ```
 
+This installs only the `strayfiles` CLI/TUI binary required by MCP (not the
+full macOS app bundle or DMG).
+
 Supported platforms: macOS (Apple Silicon, Intel), Linux (x64, arm64).
+
+## Authentication (Optional)
+
+`strayfiles mcp` works without login for local file management. This keeps the
+plugin fully usable as an open-source, local-first MCP server.
+
+If you want to link your Strayfiles account session:
+
+```bash
+strayfiles mcp auth    # Sign in (browser token flow + online verification)
+strayfiles mcp status  # Show MCP client setup + auth status
+strayfiles mcp logout  # Clear stored credentials
+```
 
 ## Usage
 
