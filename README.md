@@ -77,6 +77,13 @@ strayfiles mcp status  # Show MCP client setup + auth status
 strayfiles mcp logout  # Clear stored credentials
 ```
 
+Important:
+- `strayfiles mcp auth` links account credentials only.
+- Cross-device note sync requires Strayfiles Pro and a running sync engine
+  (`strayfiles --serve` or app sync).
+- Free tier users can still use all local MCP note-management tools; cloud sync
+  is unavailable on free.
+
 ## Usage
 
 Once installed, Claude Code automatically has access to all Strayfiles tools. Just ask naturally:
